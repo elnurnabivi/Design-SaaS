@@ -36,7 +36,7 @@ const NavBar = () => (
       ))}
     </ul>
     <Button className="ml-[128px] w-[162px] h-[45px] sm:inline hidden">
-      GET STARTED!
+      GET STARTED
     </Button>
   </div>
 );

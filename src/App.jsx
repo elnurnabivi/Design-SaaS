@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavBar, Hero, Customers, Needs } from "./components";
+import { NavBar, Hero, Customers, Needs, Cases } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Hero />
       <Customers />
       <Needs />
+      <Cases />
     </>
   );
 }
