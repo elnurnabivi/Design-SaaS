@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { NavBar, Hero, Customers, Needs, Cases } from "./components";
+import {
+  NavBar,
+  Hero,
+  Customers,
+  Needs,
+  Cases,
+  Prices,
+  Whyus,
+} from "./components";
 
 function App() {
   return (
@@ -9,6 +17,8 @@ function App() {
       <Customers />
       <Needs />
       <Cases />
+      <Prices />
+      <Whyus />
     </>
   );
 }

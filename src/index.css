@@ -19,3 +19,40 @@
 .box-shadow {
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
+
+.custom-h3 {
+  position: relative;
+}
+.custom-h3::before {
+  position: absolute;
+  content: "“";
+  color: #ff734f;
+  font-size: 146px;
+  left: -40px;
+}
+
+.custom-h3::after {
+  position: absolute;
+  content: "”";
+  color: #ff734f;
+  font-size: 146px;
+  display: inline-block;
+  transform: rotate(180deg) scaleX(-1);
+}
+
+@media (max-width: 640px) {
+  .custom-h3::before {
+    display: none;
+  }
+  .custom-h3::after {
+    display: none;
+  }
+}
+
+.left-bubble {
+  border-bottom-left-radius: 0px;
+}
+
+.right-bubble {
+  border-bottom-right-radius: 0px;
+}
