@@ -1,41 +1,42 @@
 import React from "react";
 
-const bubblesData = [
-  {
-    text: "You want a new, innovative, and user-centered UX strategy for an existing product",
-    side: "left",
-  },
-  {
-    text: "You want to understand where users struggle when using your product",
-    side: "right",
-  },
-  {
-    text: "You want to translate complex data into an easy-to-understand dashboard",
-    side: "left",
-  },
-  {
-    text: "You need additional design resources that synergize with your (already) amazing design team",
-    side: "right",
-  },
-  {
-    text: "You‘re researching how UX can impact you business growth",
-    side: "left",
-  },
-  {
-    text: "You want to understand your users and design products that meet their needs",
-    side: "right",
-  },
-];
-
 const Bubble = ({ text, className }) => {
   return (
-    <div className="w-[460px] h-auto bg-[#000] rounded-[35px] text-[#fff] pl-[30px] pr-[30px] pt-[20px] pb-[20px] text-[18px] font-bold">
+    <div
+      className={` ${className} w-[460px] h-auto bg-[#000] rounded-[35px] text-[#fff] pl-[30px] pr-[30px] pt-[20px] pb-[20px] text-[18px] font-bold `}
+    >
       {text}
     </div>
   );
 };
 
 const Whyus = () => {
+  const bubblesData = [
+    {
+      text: "You want a new, innovative, and user-centered UX strategy for an existing product",
+      side: "left",
+    },
+    {
+      text: "You want to understand where users struggle when using your product",
+      side: "right",
+    },
+    {
+      text: "You want to translate complex data into an easy-to-understand dashboard",
+      side: "left",
+    },
+    {
+      text: "You need additional design resources that synergize with your (already) amazing design team",
+      side: "right",
+    },
+    {
+      text: "You‘re researching how UX can impact you business growth",
+      side: "left",
+    },
+    {
+      text: "You want to understand your users and design products that meet their needs",
+      side: "right",
+    },
+  ];
   return (
     <div className="flex flex-col justify-center items-center bg-[#F6F6F6]">
       <h2 className="text-[35px] font-bold mb-[81px]">
@@ -56,3 +57,5 @@ const Whyus = () => {
 };
 
 export default Whyus;
+
+const createSetter = await fetch("/api/users/random_user");
