@@ -7,6 +7,9 @@ import {
   Cases,
   Prices,
   Whyus,
+  FAQ,
+  TryUs,
+  Footer,
 } from "./components";
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
       <Cases />
       <Prices />
       <Whyus />
+      <FAQ />
+      <TryUs />
+      <Footer />
     </>
   );
 }

@@ -43,7 +43,7 @@ const Whyus = () => {
         How To Know If <span className="text-[#FF734F]">TDP</span> Is Right For
         Your <span className="text-[#FF734F]">Startup</span>
       </h2>
-      <div className="grid grid-cols-2 gap-[40px]">
+      <div className="grid grid-cols-2 gap-[40px] mb-[210px]">
         {bubblesData.map((bubble, index) => {
           const positionClass =
             bubble.side === "left" ? "left-bubble" : "right-bubble";
