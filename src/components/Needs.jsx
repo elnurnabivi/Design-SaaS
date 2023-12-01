@@ -11,7 +11,7 @@ import Person3 from "../assets/person3.png";
 
 const Needs = () => {
   return (
-    <div className="bg-[#F6F6F6] pt-[150px] pb-[124px]">
+    <div id="howitworks" className="bg-[#F6F6F6] pt-[150px] pb-[124px]">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-[40px] font-bold text-center max-w-[1050px] mb-[23px]">
           A Diverse Team Of <span className="text-[#FF734F;]">Passionate</span>{" "}
@@ -64,7 +64,10 @@ const Needs = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-[40px] font-bold text-center max-w-[1050px] mb-[23px]">
+        <h2
+          id="about"
+          className="text-[40px] font-bold text-center max-w-[1050px] mb-[23px]"
+        >
           How <span className="text-[#FF734F;]">Signing Up </span> With The
           Design Project <span className="text-[#FF734F;]">Works</span>!?
         </h2>

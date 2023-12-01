@@ -3,7 +3,7 @@ import React from "react";
 const Bubble = ({ text, className }) => {
   return (
     <div
-      className={` ${className} w-[460px] h-auto bg-[#000] rounded-[35px] text-[#fff] pl-[30px] pr-[30px] pt-[20px] pb-[20px] text-[18px] font-bold `}
+      className={` ${className} w-[460px] h-auto bg-[#000] rounded-[35px] text-[#fff] pl-[30px] pr-[30px] pt-[20px] pb-[20px] text-[18px] font-bold hover:bg-[#FF734F] hover:scale-105`}
     >
       {text}
     </div>

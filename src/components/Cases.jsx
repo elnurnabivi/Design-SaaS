@@ -7,7 +7,10 @@ import Button from "./Button";
 
 const Cases = () => {
   return (
-    <div className="bg-[#292526] flex flex-col justify-center items-center">
+    <div
+      id="work"
+      className="bg-[#292526] flex flex-col justify-center items-center"
+    >
       <h2 className="text-[40px] font-bold text-[#fff] mt-[135px] mb-[109px]  text-center max-w-[1012px]">
         How <span className="text-[#F86642]">Accessible</span> UX Design Is
         Changing The <span className="text-[#F86642]">Businesses+</span> For The
@@ -55,9 +58,11 @@ const Cases = () => {
             <p className="text-[#fff]">VP of Product at Socure</p>
           </div>
         </div>
-        <Button className="text-[17px] w-[auto] pl-[16px] pr-[16px] mb-[70px] align-center">
-          SEE OUR CASE STUDIES
-        </Button>
+        <a href="#work">
+          <Button className="text-[17px] w-[auto] pl-[16px] pr-[16px] mb-[70px] align-center">
+            SEE OUR CASE STUDIES
+          </Button>
+        </a>
       </div>
     </div>
   );

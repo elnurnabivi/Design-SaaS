@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Line5 from "../assets/Line5.png";
 import Arrow2 from "../assets/Arrow2.png";
 
@@ -31,13 +31,22 @@ const FAQtext = [
 ];
 
 const FAQcontent = ({ text, longText }) => {
+  const [open, setOpen] = useState(false);
+
+  function handleToggle() {
+    setOpen(!open);
+  }
+  console.log(open);
   return (
     <div className="mb-[52px]">
-      <div className="flex flex-row justify-between">
+      <div
+        className="flex flex-row justify-between cursor-pointer"
+        onClick={handleToggle}
+      >
         <p className="text-[23px] font-semibold ">{text}</p>
         <img src={Arrow2} alt="Arrow" className="w-[34px] h-[17px]" />
       </div>
-      <p className="w-[1147px] hidden">{longText} </p>
+      <p className={`w-[1147px] ${open ? "" : "hidden"}`}>{longText} </p>
       <img src={Line5} alt="Line" className="w-[1147px] h-[2px]" />
     </div>
   );
@@ -45,7 +54,7 @@ const FAQcontent = ({ text, longText }) => {
 
 const FAQ = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-[#F6F6F6] pb-[150px]">
+    <div className="flex flex-col justify-center items-center bg-[#F6F6F6] pb-[110px]">
       <h2 className="text-[35px] font-bold mb-[77px]">
         Our Most <span className="text-[#FF734F]">Frequently</span> Asked
         Questions{" "}

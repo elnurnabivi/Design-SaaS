@@ -24,9 +24,11 @@ const Hero = () => (
         <p className="text-[17px] font-bold ">One flat monthly rate</p>
       </div>
     </div>
-    <Button className="text-[17px] w-[auto] pl-[16px] pr-[16px] mt-[12px] mb-[15px]">
-      START YOUR RISK FREE TRIAL
-    </Button>
+    <a href="#get-started">
+      <Button className="text-[17px] w-[auto] pl-[16px] pr-[16px] mt-[12px] mb-[15px]">
+        START YOUR RISK FREE TRIAL
+      </Button>
+    </a>
     <img src={People} alt="people" className="w-[80%] sm:w-[700px]"></img>
   </div>
 );

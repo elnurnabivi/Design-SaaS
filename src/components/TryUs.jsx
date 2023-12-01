@@ -4,7 +4,10 @@ import People2 from "../assets/People2.png";
 
 const TryUs = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-[#F6F6F6]">
+    <div
+      id="get-started"
+      className="flex flex-col justify-center items-center bg-[#F6F6F6] pt-[40px]"
+    >
       <h2 className="max-w-[652px] text-[50px] font-bold mb-[28px] leading-[48px] text-center">
         Let’s <span className="text-[#FF734F]">Build</span> Something{" "}
         <span className="text-[#FF734F]">Awesome</span> Together!

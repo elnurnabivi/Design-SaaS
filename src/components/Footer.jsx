@@ -31,12 +31,13 @@ const Footer = () => {
       </div>
       <div className="flex flex-col gap-[21px]">
         {navLinks.map((link) => (
-          <p
+          <a
             key={link.id}
+            href={`#${link.id}`}
             className="text-[#FFFFFF]  text-[15px] text-right font-bold"
           >
             {link.title}{" "}
-          </p>
+          </a>
         ))}
       </div>
     </div>
