@@ -11,9 +11,12 @@ import Person3 from "../assets/person3.png";
 
 const Needs = () => {
   return (
-    <div id="howitworks" className="bg-[#F6F6F6] pt-[150px] pb-[124px]">
+    <div
+      id="howitworks"
+      className=" px-[20px] sm:px-0 bg-[#F6F6F6] pt-[150px] pb-[124px]"
+    >
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-[40px] font-bold text-center max-w-[1050px] mb-[23px]">
+        <h2 className="text-[28px] sm:text-[40px] font-bold text-center max-w-[1050px] mb-[23px]">
           A Diverse Team Of <span className="text-[#FF734F;]">Passionate</span>{" "}
           UX Nerds Who Are Here To Help Your{" "}
           <span className="text-[#FF734F;]">Startup Succeed</span>
@@ -23,7 +26,7 @@ const Needs = () => {
           startup—providing you with optimized design strategies and fast
           turnarounds for an affordable monthly subscription.
         </p>
-        <div className="grid grid-cols-3 text-center mb-[187px] gap-[35px]">
+        <div className="grid grid-col-1 sm:grid-cols-3 text-center mb-[187px] gap-[35px]">
           <div className="flex flex-col justify-center items-center">
             <img
               src={Icon1}
@@ -66,7 +69,7 @@ const Needs = () => {
       <div className="flex flex-col justify-center items-center">
         <h2
           id="about"
-          className="text-[40px] font-bold text-center max-w-[1050px] mb-[23px]"
+          className="sm:text-[40px] text-[32px] font-bold text-center max-w-[1050px] mb-[23px]"
         >
           How <span className="text-[#FF734F;]">Signing Up </span> With The
           Design Project <span className="text-[#FF734F;]">Works</span>!?
@@ -79,7 +82,7 @@ const Needs = () => {
           and Product design into a deliciously smooth process that fuels
           productivity and success.
         </p>
-        <div className="grid grid-cols-3 text-center gap-[100px]">
+        <div className="grid sm:grid-cols-3 grid-col-1 text-center gap-[100px]">
           <div className="flex flex-col justify-center items-center">
             <img src={Group1} className="w-[59px] h-[59px] mb-[23px]" />
             <h3 className="text-[20px] font-bold mb-[16px] text-[#F86642] max-w-[203px] leading-6">

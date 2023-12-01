@@ -7,19 +7,23 @@ import Line from "../assets/line.png";
 
 const Customers = () => {
   return (
-    <div className="bg-[#292526] flex flex-col justify-center items-center">
-      <p className="text-[38px] font-bold text-[#fff] mt-[80px] mb-[52px]  text-center ">
+    <div className=" px-[20px] sm:px-0 bg-[#292526] flex flex-col justify-center items-center">
+      <p className=" text-[30px] sm:text-[38px] font-bold text-[#fff] mt-[80px] mb-[52px]  text-center ">
         We helped our customers raise{" "}
         <span className="text-[#FF734F;]">$1B+</span>
       </p>
-      <div className="flex flex-col sm:flex-row mb-[80px]">
-        <img src={YCombinator} alt="Ycombinator"></img>
+      <div className="flex flex-wrap sm:flex-row mb-[80px]">
+        <img
+          src={YCombinator}
+          alt="Ycombinator"
+          className="w-[50%] sm:w-auto"
+        ></img>
         <LineComponent />
-        <img src={Sequ} alt="Sequ"></img>
+        <img src={Sequ} alt="Sequ" className="w-[50%] sm:w-auto"></img>
         <LineComponent />
-        <img src={Accel} alt="Accel"></img>
+        <img src={Accel} alt="Accel" className="w-[50%] sm:w-auto"></img>
         <LineComponent />
-        <img src={A16} alt="A16"></img>
+        <img src={A16} alt="A16" className="w-[50%] sm:w-auto"></img>
       </div>
     </div>
   );

@@ -4,13 +4,13 @@ import { Button } from "../components";
 import People from "../assets/people.png";
 
 const Hero = () => (
-  <div className="flex flex-col justify-center items-center pt-[53px] bg-[#E0EAF3]  ">
-    <h1 className="text-[50px] font-bold text-[#1D1D1B] mb-[37px] max-w-[1000px]">
+  <div className="px-[20px] sm:px-0 flex flex-col justify-center items-center pt-[53px] bg-[#E0EAF3]  ">
+    <h1 className="text-center text-[28px] sm:text-[50px] font-bold text-[#1D1D1B] mb-[37px] max-w-[1000px]">
       A UI/UX Design Subscription So{" "}
       <span className="text-[#FF734F]">Good</span> It Should Come With{" "}
       <span className="text-[#FF734F]">Warning</span> Label
     </h1>
-    <div className="flex flex-col sm:flex-row gap-[40px] mb-[25px]">
+    <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[40px] mb-[25px]">
       <div className="flex">
         <img src={Checkmark} className="mr-[8px] w-[27px]" />
         <p className="text-[17px] font-bold ">No hiring headaches</p>

@@ -6,9 +6,9 @@ const TryUs = () => {
   return (
     <div
       id="get-started"
-      className="flex flex-col justify-center items-center bg-[#F6F6F6] pt-[40px]"
+      className="px-[20px] sm:px-0 flex flex-col justify-center items-center bg-[#F6F6F6] pt-[40px]"
     >
-      <h2 className="max-w-[652px] text-[50px] font-bold mb-[28px] leading-[48px] text-center">
+      <h2 className="max-w-[652px] sm:text-[50px] text-[30px] font-bold mb-[28px] leading-[48px] text-center">
         Let’s <span className="text-[#FF734F]">Build</span> Something{" "}
         <span className="text-[#FF734F]">Awesome</span> Together!
       </h2>
@@ -18,7 +18,11 @@ const TryUs = () => {
       <Button className="w-[233px] h-[59px] rounded-[15px] mb-[54px]">
         GET STARTED
       </Button>
-      <img src={People2} alt="people_photo" className="max-w-[601px]" />
+      <img
+        src={People2}
+        alt="people_photo"
+        className="sm:max-w-[601px] w-[350px]"
+      />
     </div>
   );
 };

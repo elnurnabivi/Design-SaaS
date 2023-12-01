@@ -46,7 +46,7 @@ const FAQcontent = ({ text, longText }) => {
         <p className="text-[23px] font-semibold ">{text}</p>
         <img src={Arrow2} alt="Arrow" className="w-[34px] h-[17px]" />
       </div>
-      <p className={`w-[1147px] ${open ? "" : "hidden"}`}>{longText} </p>
+      <p className={`max-w-[1147px] ${open ? "" : "hidden"}`}>{longText} </p>
       <img src={Line5} alt="Line" className="w-[1147px] h-[2px]" />
     </div>
   );
@@ -54,8 +54,8 @@ const FAQcontent = ({ text, longText }) => {
 
 const FAQ = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-[#F6F6F6] pb-[110px]">
-      <h2 className="text-[35px] font-bold mb-[77px]">
+    <div className="px-[20px] sm:px-0 flex flex-col justify-center items-center bg-[#F6F6F6] pb-[110px]">
+      <h2 className="sm:text-[35px] text-[28px] font-bold mb-[77px]">
         Our Most <span className="text-[#FF734F]">Frequently</span> Asked
         Questions{" "}
       </h2>

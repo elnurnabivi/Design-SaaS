@@ -8,7 +8,7 @@ const Prices = () => {
   return (
     <div
       id="pricing"
-      className="bg-[#F6F6F6] flex flex-col justify-center items-center "
+      className="px-[10px] sm:px-0 bg-[#F6F6F6] flex flex-col justify-center items-center "
     >
       <div className="pricing-toggle mt-[170px] mb-[116px]">
         <button
@@ -48,7 +48,7 @@ const Prices = () => {
           back.
         </p>
         <a href="#get-started">
-          <Button className="w-[233px] h-[59px] rounded-[15px] mb-[225px]">
+          <Button className="w-[233px] h-[59px] rounded-[15px] sm:mb-[225px] mb-[80px]">
             GET STARTED
           </Button>
         </a>

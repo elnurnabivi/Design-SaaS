@@ -66,7 +66,7 @@ const Packages = ({ selectedOption }) => {
   ];
 
   return (
-    <div className="flex flex-row gap-[42px]">
+    <div className="flex sm:flex-row flex-col gap-[42px]">
       {packageData.map((pkg, index) => {
         const currentPricing = pricingDetails[selectedOption][pkg.name];
         return (

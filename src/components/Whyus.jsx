@@ -3,7 +3,7 @@ import React from "react";
 const Bubble = ({ text, className }) => {
   return (
     <div
-      className={` ${className} w-[460px] h-auto bg-[#000] rounded-[35px] text-[#fff] pl-[30px] pr-[30px] pt-[20px] pb-[20px] text-[18px] font-bold hover:bg-[#FF734F] hover:scale-105`}
+      className={` ${className} sm:w-[460px] h-auto bg-[#000] rounded-[35px] text-[#fff] pl-[30px] pr-[30px] pt-[20px] pb-[20px] text-[18px] font-bold hover:bg-[#FF734F] hover:scale-105`}
     >
       {text}
     </div>
@@ -38,12 +38,12 @@ const Whyus = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center bg-[#F6F6F6]">
-      <h2 className="text-[35px] font-bold mb-[81px]">
+    <div className="px-[20px] sm:px-0 flex flex-col justify-center items-center bg-[#F6F6F6]">
+      <h2 className="sm:text-[35px] text-[28px] font-bold sm:mb-[81px] mb-[30px]">
         How To Know If <span className="text-[#FF734F]">TDP</span> Is Right For
         Your <span className="text-[#FF734F]">Startup</span>
       </h2>
-      <div className="grid grid-cols-2 gap-[40px] mb-[210px]">
+      <div className="grid sm:grid-cols-2 grid-col-1 sm:gap-[40px] gap-[20px] sm:mb-[210px] mb-[80px]">
         {bubblesData.map((bubble, index) => {
           const positionClass =
             bubble.side === "left" ? "left-bubble" : "right-bubble";
