@@ -57,5 +57,3 @@ const Whyus = () => {
 };
 
 export default Whyus;
-
-const createSetter = await fetch("/api/users/random_user");
